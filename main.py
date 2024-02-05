@@ -9,9 +9,9 @@ def main():
     try:
         print(r.recognize_google(audio, language='ru-RU'))
     except sr.UnknownValueError:
-        print("Google Speech Recognition не понял аудио")
+        print("Говорите внятно")
     except sr.RequestError as e:
-        print("Не удалось запросить результаты от Google Speech Recognition service; {0}".format(e))
+        print("Не удалось запросить результаты от Speech Recognition service; {0}".format(e))
 
 while True:
     main()
